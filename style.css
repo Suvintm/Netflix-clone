@@ -25,7 +25,7 @@ body{
     border-bottom: 10px solid rgb(117, 112, 112);
 }
 nav{
-    max-width: 60vw;
+    max-width: 75vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -41,9 +41,10 @@ nav img{
 nav button{
     position: relative;
     z-index: 100;  
+    margin: 8px;
 }
 .hero{
-    font-family: 'Martel sans',sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: calc(100% - 62px);
     display: flex;
     align-items: center;
@@ -87,6 +88,9 @@ nav button{
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    padding: 10px;
+    transition: all 1s ease-out;
+
  }
  .btn-red{
     background-color: rgba(26, 41, 249, 0.945);
@@ -97,11 +101,22 @@ nav button{
     cursor: pointer;
 
  }
+ .btn1:hover{
+    border-color: rgb(45, 44, 44);
+ }
  .btn-red-sm{
     background-color: red;
     color: white;
     border: none;
+    padding: 10px;
+    transition: all 0.3s ease-out;
+
  }
+ .btn-red-sm:hover{
+     background-color: green;
+    padding: 11px;
+ }
+
  .hero-btn{
     display: flex;
     align-items: center;
@@ -117,14 +132,18 @@ nav button{
     color: white;
  }
  .first{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    max-width: 70vw;
-    margin: auto;
+    max-width: 90vw;
+    margin: 50px;
     color: white;
     align-items: center;
-    padding: 20px;
+    padding: 34px 0;
     justify-content: center;
+    gap: 40px;
+    border: 6px solid rgb(50, 47, 47);
  }
  .secimg{
     position: relative;
@@ -139,3 +158,105 @@ nav button{
     top: 51px;
     right: 0;
  }
+ .first h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(239, 239, 235, 0.995);
+    padding-bottom:20px ;
+ }
+ .first p{
+    font-size: 20px;
+    color: rgba(239, 239, 235, 0.288);
+
+ }
+ .second{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 34px 0;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    margin: 50px;
+    color: white;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    gap: 40px;
+    border: 6px solid rgb(50, 47, 47);
+ }
+ .second h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(239, 239, 235, 0.995);
+    padding-bottom:20px ;
+ }
+ .second p{
+    font-size: 20px;
+    color: rgba(51, 221, 9, 0.53);
+
+ }
+ .second img{
+    width: 20vw;
+ }
+ .sep{
+    border-color: aliceblue;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+ }
+ .fin h2{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 20px;
+ }
+ 
+ .finbox{
+   transition: all 1s ease-out; /*we should not add this transition in hover{} to get smooth in and out effect*/
+    background-color: rgba(240, 238, 236, 0.151);
+    color: rgba(255, 246, 246, 0.717);
+    width: 45vw;
+    margin: 34px auto ;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor:pointer;
+    
+ }
+ .finbox:hover{
+     background-color: rgba(223, 218, 223, 0.105);
+ }
+ .finbox div{
+    margin: 10px;
+ }
+ .finbox svg{
+   filter: invert(white);/*to get white color to the plus symbol*/
+ }
+ a{
+   color: rgba(255, 255, 255, 0.338);
+ }
+ a:hover{
+   color: rgba(234, 233, 241, 0.863);
+ }
+ footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   color: rgba(255, 255, 255, 0.509);
+   max-width: 60vw;
+   margin: auto;
+   
+ }
+ .footer-item{
+   display: flex;
+   flex-direction: column;
+   font-size: 20px;
+   gap: 10px;
+  }
+.abovefooter{
+   max-width: 62vw;
+   margin: auto;
+   justify-content: space-between;
+   padding: 10px;
+}

@@ -9,7 +9,7 @@ body{
     background-color: black;
 }
 .main{
-    background-image:url("assets/imgs/bg.png");
+    background-image:url("assets/imgs/bgg.jpg");
     height:80vh; 
     position: relative;
     background-position: center center;
@@ -31,6 +31,12 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 100px;
+}
+@media (max-width:768px){
+   .nav{
+      flex-wrap: nowrap;
+      overflow-x: auto;
+   }
 }
 nav img{
     color:  red;
